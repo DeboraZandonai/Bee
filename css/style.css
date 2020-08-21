@@ -1,0 +1,96 @@
+
+body {
+  background: linear-gradient(to bottom,  rgb(77, 169, 226), rgb(127, 193, 235));
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 90vmin;
+  height: 90vmin;
+}
+
+.bee {
+  animation: flying 4s ease infinite;  
+}
+
+.wing-1 {
+  animation: wing-anim-1 150ms linear infinite;
+}
+
+.wing-2 {
+  animation: wing-anim-2 150ms linear infinite;
+}
+
+.antenna-1 {
+  animation: antenna-anim-1 820ms ease-in-out infinite;
+}
+
+.antenna-2 {
+  animation: antenna-anim-2 600ms ease-in-out infinite;
+}
+
+.leg-1 {
+  animation: leg-anim-1 600ms infinite;
+}
+
+.leg-2 {
+  animation: leg-anim-2 620ms infinite;
+}
+
+.leg-3 {
+  animation: leg-anim-3 570ms infinite;
+}
+
+.leg-4 {
+  animation: leg-anim-4 620ms infinite;
+}
+
+@keyframes wing-anim-1 {
+  0%, 100% { d: path('M17 9 q -5 0 -6 -6 q 5 0 6 6Z'); }
+  50% { d: path('M17 9 q -6 .5 -6 -4 q 6 -.5 6 4Z'); }
+}
+
+@keyframes wing-anim-2 {
+  0%, 100% { d: path('M17 9 q 0 -5 6 -6 q 0 5 -6 6Z'); }
+  50% { d: path('M17 9 q -.5 -5 6 -4 q .5 5 -6 4Z'); }
+}
+
+@keyframes antenna-anim-1 {
+  0%, 100% { d: path('M24.5 9.5 q0 -6 4 -6'); }
+  50% { d: path('M24.5 9.5 q0 -6 4.2 -5.8'); }
+}
+
+@keyframes antenna-anim-2 {
+  0%, 100% { d: path('M26 10 q0 -5 5 -4'); }
+  50% { d: path('M26 10 q0 -4.8 5.2 -3.8');}
+}
+
+@keyframes flying {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1px); }
+}
+
+@keyframes leg-anim-1 {
+  0%, 100% { d: path('M14 25 q2 0 2 4'); }
+  50% { d: path('M14 25 q1.8 0 1.8 4'); }
+}
+
+@keyframes leg-anim-2 {
+  0%, 100% { d: path('M14 25 q1 0 1 4'); }
+  50% { d: path('M14 25 q.8 0 .8 4'); }
+}
+
+
+@keyframes leg-anim-3 {
+  0%, 100% { d: path('M14 25 q-2 0 -2 4'); }
+  50% { d: path('M14 25 q-1.8 0 -1.8 4'); }
+}
+
+@keyframes leg-anim-4 {
+  0%, 100% { d: path('M14 25 q-1 0 -1 4'); }
+  50% { d: path('M14 25 q-.8 0 -.8 4'); }
+}
